@@ -7,7 +7,7 @@ class UF {
   recourse(x, res){
     var self =this;
     console.log("Made " + x + " request");
-    var url = "https://one.uf.edu/apix/soc/schedule/?category=CWSP&term=2188&last-control-number=" + x;
+    var url = "https://one.uf.edu/apix/soc/schedule/?category=CWSP&term=2271&last-control-number=" + x;
     request(url, function(error, response, html) {
       if (!error) {
         var temp = JSON.parse(html);
